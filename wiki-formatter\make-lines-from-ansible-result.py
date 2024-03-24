@@ -29,7 +29,7 @@ for line1, line2, next_line_non_empty in return_next_two_empty_lines(filename):
     print("Line 2:", line2)
     print("Next line non-empty:", next_line_non_empty)
     print()
-    line1 = replace_chars(line1, [']','[','=','>','{'], '')
+    line1 = replace_chars(line1, {']','[','=','>','{'}, '')
     line2 = line2[8:-1]
     ## withough having called strip the indexes are 12:-2
     print(line1, line2)
